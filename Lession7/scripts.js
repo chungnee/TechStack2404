@@ -1,0 +1,11 @@
+let name = 'AAA';
+let age = 20;
+let isGood = true;
+let x = true;
+let y = false;
+let z = 10;
+let a = 11;
+let b='22';
+let c = 33;
+let d ='4';
+console.log(a+b+c+d);

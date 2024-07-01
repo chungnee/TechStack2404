@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>#todo</h1>
+      <div class="tabs">
+        <div class="tab active" data-tab="all">All</div>
+        <div class="tab" data-tab="active">Active</div>
+        <div class="tab" data-tab="completed">Completed</div>
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="add details" id="todo-input" />
+        <button id="add-todo">Add</button>
+      </div>
+      <ul class="todo-list" id="todo-list"></ul>
+      <button id="clear-todos">Clear All</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table {
+            border: 2px groove;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        #table th, #table td {
+            border: 1px inset;
+            padding: 8px;
+        }
+        th {
+            text-align: center;
+        }
+        .button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Name 1</td>
+                <td>Address 1</td>
+                <td class="button"><button onclick="deleteRow(this)">Xóa</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Name 2</td>
+                <td>Address 2</td>
+                <td class="button"><button onclick="deleteRow(this)">Xóa</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Name 3</td>
+                <td>Address 3</td>
+                <td class="button"><button onclick="deleteRow(this)">Xóa</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Name 4</td>
+                <td>Address 4</td>
+                <td class="button"><button onclick="deleteRow(this)">Xóa</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function deleteRow(button) {
+            // Lấy phần tử tr cha của button (dòng hiện tại)
+            var row = button.parentNode.parentNode;
+            // Xóa dòng
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+</html>
